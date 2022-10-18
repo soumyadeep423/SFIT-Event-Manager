@@ -107,22 +107,34 @@
 .dropdown:hover .dropbtn {background-color: orange ;}
 
 .announcement{
+ 
   color: white;
-  background-color:rgb(250, 31, 31);
+  background-color:darkorange;
   font-size: 20px ;
   width:25%;
   height:40px;
   float:left;
-
-  
 }
+
+
 .flash{
+ 
   background-color: powderblue;
   font-size: 25px;
    width:75%;
    height:40px;
    padding :10 10 0 10 ;
    margin-left : 25%;
+}
+
+ #blink {
+  animation: blinker 1s step-start infinite; 
+ }
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
     </style>
@@ -144,7 +156,7 @@
     <div class="image" ; style=" padding-right: 40%;">  </div>
     
  <div class="dropdown">
-  <button class="dropbtn" ; style=" font-size: 20px;">Committees</button>
+  <button class="dropbtn" ; style=" font-size: 20px;">Commitees</button>
   <div class="dropdown-content">
     <a href="tejas.html">Tejas</a>
     <a href="#">ISTE</a>
@@ -157,10 +169,9 @@
      <b>NEW ANNOUNCEMENT : </b>
   </div>
     <div class="flash">
-    <marquee>SFIT has been accredited at <b style ="color:red;">A+</b> grade valid for a period of 5 years from 23/8/22 by <b>NAAC</b>
+    <marquee id= "blink">Volunteer Registrations for <b style ="color:red;">IRIS</b> 2023 opening very soon!! Stay Tuned for more Updates !!
     </marquee></div>
-   
-    <div>
+        <div>
 <h1>Welcome To Tejas!!!</h1>
 </div>
 <div>
@@ -241,7 +252,6 @@ Meet:- 7506426859
 -Team Tejas 
 </div>
 </p>
-     
     
   
 
