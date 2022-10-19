@@ -69,7 +69,8 @@
     .dropbtn {
   background-color: orange;
   margin-left:12%;
-  color: white;
+  color: black;
+  box-shadow: inset 0 0 0 1px #000, inset -4px -4px 0 6px rgb(231, 144, 29);
   padding: 16px;
   font-weight: bold;
   font-size: 16px;
@@ -141,7 +142,7 @@
  .sliding-background {
         background: url("abstract_1.png") repeat-x;
         height: 560px;
-        width: 5076px;
+        width:5680px;
         animation: slide 60s linear infinite;
       }
       
@@ -153,6 +154,35 @@
           transform: translate3d(-1692px, 0, 0);
         }
     }
+
+    .btn-shine
+    {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 12px 48px;
+    background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+    background-position: 0;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    animation: shine 6s infinite linear;
+    animation-fill-mode: forwards;
+   -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration: none;
+    white-space: nowrap;
+    }
+
+@keyframes shine{
+  0%{
+    background-position: 0;}
+  60%{
+    background-position: 400px;}
+  80%{
+    background-position: 200px;}
+}
 
     </style>
     </head>
@@ -170,11 +200,7 @@
      </span>
 
     <div class="image" ; style=" padding-right: 40%;">  </div>
-
-   <!-- <div class="home">
-        <button class=""
-    </div>  -->
-    
+  
  <div class="dropdown">
   <button class="dropbtn" ; style=" font-size: 20px;">Committees</button>
   <div class="dropdown-content">
@@ -193,8 +219,9 @@
     </marquee></div>
 
 <div class="sliding-background"></div>
-    
-    
+
+  <div class="btn-shine">Event Management 
+   </div>   
     
     <script>
     function openNav() {
