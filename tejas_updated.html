@@ -1,0 +1,266 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family:sans-serif;
+        background-color: white ; 
+        margin:0;
+        padding:0;
+        width:max;
+        height:max;
+        box-sizing: border-box;
+        opacity: 0.8;
+      }
+      
+      .imgres{
+        background-color: grey;
+        width:100 
+        height:40px;
+      }
+  
+    .image{
+      background: white url("erp.png")no-repeat left;
+      margin-left: 12%;
+      margin-top:10px;
+      margin-bottom: 10px;
+      padding: 40px;
+  
+    }
+      .sidenav {
+        height: 100%;
+        width:0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+  
+    
+      .dropbtn {
+    background-color: orange;
+    margin-left:12%;
+    color: black;
+    box-shadow: inset 0 0 0 1px #000, inset -4px -4px 0 6px rgb(231, 144, 29);
+    padding: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor:pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display:flexbox;
+  }
+  
+  .dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    margin-left:12%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-left: 5px solid royalblue;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    border-style:outset ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: orange ;}
+  
+  .announcement{
+    color: white;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    font-size: 20px ;
+    width:25%;
+    height:40px;
+    text-shadow: 2px 2px 4px #000000;
+    float:left;
+  }
+  
+  
+  .flash{
+    background-color: powderblue;
+    font-size: 25px;
+     width:75%;
+     height:40px;
+     padding :10 10 0 10 ;
+     margin-left : 25%;
+     text-shadow: 0 0 2px #FF0000;
+  }
+  
+   #blink {
+    animation: blinker 1.5s step-start infinite; 
+   }
+  
+  @keyframes blinker {
+    30% {
+      opacity: 0;
+    }
+  }
+        
+  #shift{
+    color: white;
+    font-size: 20px;
+    padding-left: 30%;
+    border:5px solid black;
+    background-color: rgb(20, 20, 182);
+    line-height: 1.6;
+    display:flexbox;
+  }
+
+  
+    </style>
+    </head>
+    <body>
+           
+     
+      <div id="mySidenav" class="sidenav" >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="login.html">Login </a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+      <span style="font-size :35px; cursor:pointer; background-color: grey;" onclick="openNav()">
+        <div class="imgres">   &#9776; </div>
+       </span>
+  
+      <div class="image" ; style=" padding-right: 40%;">  </div>
+      
+   <div class="dropdown">
+    <button class="dropbtn" ; style=" font-size: 20px;">Committees</button>
+    <div class="dropdown-content">
+      <a href="tejas_updated.html">Tejas</a>
+      <a href="#">ISTE</a>
+      <a href="#">Codex </a>
+       <a href="#">CSI </a>
+    </div>
+    </div>
+  
+    <div class= "announcement" style="text-align:right; padding-top: 10px;">
+       <b>NEW ANNOUNCEMENT : </b>
+    </div>
+      <div class="flash">
+      <marquee id= "blink"> Registrations for <b style ="color:red;">Tejas</b> opened !! Register asap !
+      </marquee></div>
+      
+    <div id="shift">
+    <div class="align">
+<h1>Welcome To Tejas!!!</h1>
+
+<div>
+<p>Attention everyone !!!!!</p>
+</div>
+<div>
+Ever thought of joining a technical team and competing in competitions?? 
+</div>
+<div>
+If yes, then it is a good opportunity for you 
+</div>
+<div>
+<b>SFIT TEJAS</b> is now  recruiting new members 
+ </div>
+<div>
+<p>Registration open for:</p> 
+</div>
+<p>
+<div>
+ 1.Design Department ( only for SE mech students)
+</div>
+<div> 
+ 2.Graphics Department for all SE students
+</div>
+<div> 
+3. Avionics Department for all SE students
+</div> 
+</p>
+<p>
+<div>
+When? Where? How? 
+</div>
+<div>
+ Date:- 12 October 2022 
+</div>
+<div>
+Time:- 5 pm onwards
+</div> 
+</p>
+<div>
+<p>
+So make sure you register quickly 
+</div>
+<div>
+<a href="http://localhost/sfit%20em/tejasrf.php"><strong style="color:#2fd600">REGISTER HERE</strong></a>
+</div>
+<div>
+</p>
+<p>
+Visit us on:- 
+</div>
+
+<div> 
+  <a href=" https://www.instagram.com/sfit_tejas/"><i style="color: #2fd600;line-height:1.6">Instagram</i></a>
+  <br>
+  <a href=" https://www.linkedin.com/in/team-tejas-449aa3243"><i style="color:#2fd600">Linkedin</i></a>
+</div>
+
+<p>
+<div>
+-Team Tejas 
+</div>
+</p>
+</div>
+</div>
+
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    </body>
